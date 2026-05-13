@@ -65,60 +65,14 @@
     <div class="blur-circle circle-3"></div>
   </div>
 
-  <!-- Floating speech bubbles above widget -->
-  <div id="widget-bubbles" style="
-    position: fixed;
-    bottom: 90px;
-    right: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 8px;
-    z-index: 9998;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  ">
-    <button onclick="document.getElementById('widget-bubbles').style.display='none'" style="
-      position: absolute;
-      top: -8px;
-      right: -8px;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      border: none;
-      background: rgba(0,0,0,0.15);
-      color: white;
-      font-size: 14px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      line-height: 1;
-    ">&times;</button>
-    <div style="
-      background: white;
-      padding: 12px 16px;
-      border-radius: 18px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-      font-size: 14px;
-      color: #1a1a1a;
-      max-width: 300px;
-    ">Hi 👋 I'm your AI assistant. Ask me about our menu, hours, or make a reservation!</div>
-    <div style="
-      background: white;
-      padding: 12px 16px;
-      border-radius: 18px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-      font-size: 14px;
-      color: #1a1a1a;
-      max-width: 300px;
-    ">What can I help you with today?</div>
-  </div>
-
   <script
     async
     src="https://app.omago.ai/widget.js"
     data-chatbot="10xiavm0"
     data-position="bottom-right"
+    data-bottom-offset="95"
+    data-side-offset="25"
+    data-greetings='["Hi 👋 I&apos;m your AI assistant. Ask me about our menu, hours, or make a reservation!", "What can I help you with today?"]'
   ></script>
 </body>
 </html>
