@@ -1,0 +1,190 @@
+.editor p, .editor div, .editor a, .editor li, .editor td, .editor th, .editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6 { margin:0px; padding:0px; color:#000000; font-size: 14px; word-wrap: break-word; white-space: normal; }
+
+.editor ul, .editor ol { margin: 0; }
+
+.editor ul { padding-left: 25px; }
+
+.editor ol { padding-left: 25px; }
+
+.editor, .editor p, .editor li { line-height: 26px; }
+
+.editor img { border:none; }
+
+.editor a, .editor a:link, .editor a:active, .editor a:visited { color:#000000; font-size: inherit; }
+
+.editor a:hover { color:#000000; }
+
+.editor table.table-border, .editor table.table-border td, .editor table.table-border th { 
+	border-collapse: collapse; 
+	border: 1px solid #464646;
+}
+
+.editor td, .editor th { padding:10px; }
+
+hr { border:none; height:1px; background-color:#CCCCCC; color:#CCCCCC; }
+
+.editor table.table-center{margin:0 auto;}
+
+.editor .underline, .editor .underline * { text-decoration:underline; }
+
+.editor table, .editor img { max-width: 100%; height: auto; }
+
+.editor:after {
+	clear: both;
+    display: block;
+    content: " ";
+}
+
+.editor .table-responsive-wrapper {
+	width: 100%;
+}
+
+.editor .table-responsive-wrapper .table-responsive {}
+
+.editor .text-right {
+	float: left;
+	margin-right: 20px;
+}
+
+.editor .text-left {
+	float: right;
+	margin-left: 20px;
+}
+
+.editor .round-border {
+	border-radius: 30px;
+}
+
+.editor .two-col,
+.editor .three-col,
+.editor .four-col,
+.editor .five-col,
+.editor .six-col,
+.editor .two-col2,
+.editor .three-col2,
+.editor .four-col2,
+.editor .five-col2,
+.editor .six-col2 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px 2%;
+}
+
+.editor .two-col > .col,
+.editor .two-col2 > .col {
+	width: 49%;
+}
+
+.editor .three-col > .col,
+.editor .three-col2 > .col {
+	width: 32%;
+}
+
+.editor .four-col > .col,
+.editor .four-col2 > .col {
+	width: 23.5%;
+}
+
+.editor .five-col > .col,
+.editor .five-col2 > .col {
+	width: 18.4%;
+}
+
+.editor .six-col > .col,
+.editor .six-col2 > .col {
+	width: 15%;
+}
+
+.editor .ebutton,
+.editor .ebutton:link,
+.editor .ebutton:active,
+.editor .ebutton:visited {
+	display: inline-block;
+	padding: 10px 25px;
+	line-height: normal;
+	min-width: 80px;
+	text-align: center;
+}
+.editor .ebutton.round {
+	border-radius: 20px; 
+}
+
+.editor .etitle {
+	margin-bottom: 20px;
+}
+.editor .etitle.left {
+	text-align: left;
+}
+.editor .etitle.center {
+	text-align: center;
+}
+.editor .etitle.right {
+	text-align: right;
+}
+.editor .etitle h2 {
+	border-bottom-width: 5px;
+    border-bottom-style: solid;
+	display: inline-block;
+	padding-block: 5px;
+}
+
+.editor .short-long-col + *,
+.editor .long-short-col + * {
+	clear: both;
+}
+.editor .short-long-col > *,
+.editor .long-short-col > * {
+	float: left;
+}
+.editor .short-long-col .left-col,
+.editor .long-short-col .right-col {
+	width: 33%;
+}
+.editor .short-long-col .right-col,
+.editor .long-short-col .left-col {
+	width: 67%;
+}
+.editor .short-long-col .left-col,
+.editor .long-short-col .left-col {
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+	.editor .text-right,
+	.editor .text-left {
+		float: none;
+		display: block;
+		margin: 0 auto 20px;
+	}
+	
+	.editor .two-col > .col,
+	.editor .three-col > .col,
+	.editor .four-col > .col,
+	.editor .five-col > .col,
+	.editor .six-col > .col {
+		width: 100%;
+	}
+	
+	.editor .three-col2 > .col,
+	.editor .four-col2 > .col,
+	.editor .five-col2 > .col,
+	.editor .six-col2 > .col {
+		width: 49%;
+	}
+
+	.editor .short-long-col .left-col,
+	.editor .short-long-col .right-col,
+	.editor .long-short-col .left-col,
+	.editor .long-short-col .right-col {
+		width: 100%;
+	}
+	.editor .short-long-col .left-col,
+	.editor .long-short-col .left-col {
+		padding-right: 0;
+	}
+	.editor .short-long-col .right-col,
+	.editor .long-short-col .right-col {
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,251 @@
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+strike,
+summary,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp,
+button,
+input, 
+textarea {
+    /*#########Please don't place font-family here.'########*/
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust:none;
+    font-size: 14px;
+    color: #000000;
+	outline: 0;
+}
+
+/*Avoid editor bug #####Please don't place color and any font style in here.'######*/
+strong, em, span, font, sub, sup{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust:none;
+}
+
+input, textarea, button, html, body {
+    font-family: 'Gotham-Book', 'Microsoft JhengHei', 微軟正黑體, 'Heiti TC', Arial, 'PMingLiU', 新細明體, 'Noto Emoji', 'Noto Color Emoji' !important;
+}
+
+button {
+	cursor: pointer;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+	margin: 0;
+    padding: 0;
+}
+
+html{ overflow-y:scroll;}
+
+@media screen and (min-width: 1201px) {
+    body {
+		image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    /*
+      Override the default (display: inline) for
+      browsers that do not recognize HTML5 tags.
+
+      IE8 (and lower) requires a shiv:
+      http://ejohn.org/blog/html5-shiv
+    */
+    display: block;
+}
+
+b,
+strong {
+    /*
+      Makes browsers agree.
+      IE + Opera = font-weight: bold.
+      Gecko + WebKit = font-weight: bolder.
+    */
+    font-weight: bold;
+}
+
+img {
+    font-size: 0;
+    vertical-align: middle;
+    border: 0px;
+    /*
+      For IE.
+      http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+    */
+    -ms-interpolation-mode: bicubic;
+    /*pointer-events: none;*/
+}
+
+li {
+    /*
+      For IE6 + IE7.
+    */
+    display: list-item;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td,
+caption {
+    font-weight: normal;
+    /*vertical-align: top;*/
+    text-align: left;
+}
+
+svg {
+    /*
+      For IE9 beta.
+    */
+    overflow: hidden;
+}
+
+a, a:link, a:active, a:visited { color:#767676;  text-decoration:none; }
+a:hover { color:#666;  text-decoration:none;  }
+
+.preload { display:none; line-height:0px; font-size:0px; margin:0px; padding:0px; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input,
+select,
+textarea,
+button {
+	-webkit-appearance: none;
+    border-radius: 0;
+}
+
+textarea {
+	overflow: auto;
+	resize: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: #096753;
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #096753;
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #096753;
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #096753 !important;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100); 
+    filter: alpha(opacity = 100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
